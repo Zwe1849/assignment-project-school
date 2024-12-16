@@ -1,0 +1,194 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html{
+   scroll-behavior: smooth;
+}
+
+
+body{
+    background-color: whitesmoke;
+    line-height: 1.6;
+    padding-top: 20px;
+    box-shadow: inset 0 0 50px;
+    margin: 0;
+      
+} 
+
+
+.nav1 {
+   padding: 5px;
+}
+ul {
+   margin: 0;
+   padding: 0;
+   display: flex;
+   justify-content: flex-end; 
+   list-style: none;
+}
+li {
+   margin: 0 4px;
+}
+a {
+   color: black;
+   text-decoration: none;
+   font-size: 15px;
+   font-weight: 520;
+   padding:  10px 10px;
+   cursor: pointer;
+   font-family: Arial, Helvetica, sans-serif;
+}
+a:hover {
+   background-color: lightblue;
+   color: #FFF;
+   border-radius: 1000px;
+   background: linear-gradient(45deg, #2575fc, #6a11cb); 
+  transform: translateY(-2px); 
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+}
+
+#background_image img{
+    /* padding-top: 30px; */
+    width: 100%;
+    height: 100vh;
+    margin: 0px;
+    border: 6px solid gold;
+}
+
+#container
+{
+position: relative;
+margin: 0;
+margin-top: 20px;
+}
+
+#gyapoon1 img{
+    position: absolute;
+    width: 298px; 
+    height: 149px; 
+    position: absolute; 
+    bottom: 0px;  
+    animation: gyapoon1 infinite linear 10s;  
+}
+
+@keyframes gyapoon1{
+    0%{left: 0px;}
+    50%{left: 700px;}
+    100%{left: 0px;}
+}
+
+#jellyfish{
+    position: absolute;
+    /* Default location with distance of about 30% from the left */
+    left: 30%;
+    width: 150px;
+    animation: jellyfish 10s ease-in-out 0s infinite;
+    }
+    
+    @keyframes jellyfish {
+    0%{bottom: 20%;}
+    20%{bottom: 40%;}
+    40%{bottom: 60%;}
+    60%{bottom: 40%;}
+    80%{bottom: 30%;}
+    100%{bottom: 20%;}
+    }
+
+#whale img{
+    width: 198px;
+    height: 149px;
+    position: absolute;
+    right: 0px;
+    top: 0;
+    animation: whale 10s ease-in-out 0s infinite;
+    padding: 35px;
+}
+
+@keyframes whale{
+    0%{right: 0%;}
+    50%{right: 30%;}
+    100%{right: 0%;}
+}
+
+#seahorse img{
+    width: 150px;
+    height: 100px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    animation: seahorse 10s ease-in-out 0s infinite; 
+}
+
+@keyframes seahorse{
+    0%{bottom: 0%;}
+    50%{bottom: 30%;}
+    100%{bottom: 0%;}
+}
+
+.con{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn_change_bg{
+    background-color: yellow;
+    cursor: pointer;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px;
+}
+
+#fish{
+    background-color: yellow;
+    cursor: pointer;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px;
+}
+
+.game{
+    justify-content: center;
+    text-align: center;
+    background-color: #2575fc;
+    padding: 30px;
+
+}
+#game1{
+    margin: 10px;
+    padding: 10px;
+    border-radius: 100px;
+    background-color: white;
+    width: 100px;
+    height: 100px;
+}
+
+#game1 img{
+    width: 100%;
+    height: 100%;
+}
+
+.game p{
+    font-family: Playfair display;
+    font-size: xx-large;
+    font-weight: 600;
+}
+
+.rockk{
+    border-radius: 100px;
+    width: 100%;
+    /* height: 50px; */
+    object-fit: cover;
+    margin: 0;
+    padding: 0;
+}
